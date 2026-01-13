@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://p4stirnvnbvs"]
+[gd_scene load_steps=4 format=3 uid="uid://p4stirnvnbvs"]
 
 [ext_resource type="Script" uid="uid://bertunpepp14y" path="res://CardManager.gd" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dd0ps1np7aycq" path="res://PlayerHand.gd" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://btdswxy7htp5i" path="res://Scenes/CardSlot.tscn" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://bqd4yefkwrwki" path="res://Battles/battleground.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [1159.0]
@@ -12,19 +11,16 @@ metadata/_edit_horizontal_guides_ = [1159.0]
 script = ExtResource("1_0xm2m")
 
 [node name="CardSlot" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(353, 726)
+position = Vector2(329.99997, 660)
 scale = Vector2(0.70209634, 0.7192835)
 
 [node name="CardSlot2" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(202, 728)
+position = Vector2(178.99998, 662)
 scale = Vector2(0.70209634, 0.7192835)
 
 [node name="CardSlot3" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(504, 728)
+position = Vector2(481, 662)
 scale = Vector2(0.70209634, 0.7192835)
 
 [node name="PlayerHand" type="Node2D" parent="."]
 script = ExtResource("3_1bvp3")
-
-[node name="Battleground" parent="." instance=ExtResource("4_1bvp3")]
-position = Vector2(-146, -205)
